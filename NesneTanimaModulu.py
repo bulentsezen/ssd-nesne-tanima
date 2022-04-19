@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
     while True:
         success, img = cap.read()
-        sonuc,objectInfo = nesneleriBul(img, objects=["portakal", "makas"])
+        sonuc,objectInfo = nesneleriBul(img, 0.45, objects=["portakal", "makas"])
         #print(objectInfo)
 
         cv2.imshow("Output", img)
